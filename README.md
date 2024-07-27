@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# React App with Material-UI, React Responsive, and React Date Picker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React application that utilizes Material-UI for UI components, React Responsive for responsive design, and React Date Picker for date selection functionality.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Getting Started](#getting-started)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Features](#features)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+These instructions will help you set up and run the project on your local machine for development and testing purposes.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+Make sure you have the following installed on your local machine:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Node.js](https://nodejs.org/en/) (>= 14.0.0)
+- [npm](https://www.npmjs.com/) (>= 6.0.0) or [yarn](https://yarnpkg.com/)
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone https://github.com/saurabh110398/wellness_retreat_reactjs
+   cd your-repo-name
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install dependencies:   
+   Using npm:
+   npm install
 
-### `npm run eject`
+3. Usage
+To start the development server:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Using npm:   
+npm start
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This will run the app in the development mode.
+Open http://localhost:3000 to view it in your browser.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The page will reload if you make edits.
+You will also see any lint errors in the console.
 
-## Learn More
+4. Project Structure
+├── public
+│   ├── index.html
+│   └── ...
+├── src
+│   ├── components
+│   │   ├── DateRangeFilter.js
+│   │   ├── Filter.js
+|   |   ├── Header.js
+│   │   ├── Footer.js
+|   |   ├── Retreates.js
+│   │   ├── RetreateCards.js
+|   |   ├── Search.js
+│   │   ├── WellnessRetreates.js
+│   │   └── ...
+|   ├── api
+│   │   ├── apiUtils.js
+│   │   ├── WellnessApi.js
+│   │   └── ...
+│   ├── App.js
+│   ├── index.js
+│   └── ...
+├── .gitignore
+├── package.json
+├── README.md
+└── ...
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. Features
+Material-UI: A popular React UI framework that provides a set of components that implement Google's Material Design.
+React Responsive: A utility for managing responsive components.
+React Date Picker: A simple and reusable datepicker component for React.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
