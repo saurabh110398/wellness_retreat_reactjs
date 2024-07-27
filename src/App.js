@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import WellnessRetreates from './components/WellnessRetreates';
+import { useMediaQuery } from 'react-responsive'
 function App() {
+
+  const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 1224px)' })
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      {isDesktopOrLaptop && <WellnessRetreates />}
+      {isTabletOrMobile && <WellnessRetreates />}
+      <Footer />
     </div>
   );
 }
